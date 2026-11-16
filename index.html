@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>إنجاز · Injaz</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef0f8;--card:#fff;--tx:#0d1240;--mu:#6b7194;--ac:#4f5bff;--ln:#e1e4f2;--soft:#f3f4fc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0e26;--card:#151a3d;--tx:#eef0ff;--mu:#9aa0c8;--ln:#252b5c;--soft:#1b2149}}
+:root[data-theme="dark"]{--bg:#0b0e26;--card:#151a3d;--tx:#eef0ff;--mu:#9aa0c8;--ln:#252b5c;--soft:#1b2149}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Cairo,system-ui,sans-serif;line-height:1.6}
+.w{max-width:1080px;margin:auto;padding:0 18px}
+.hero{background:repeating-linear-gradient(90deg,#0a0f6b 0 38px,#1a22a8 38px 70px,#0b1180 70px 110px),#0a0f6b;color:#fff;padding-bottom:70px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(#050834cc,#0a0f6b55 50%,#050834dd);pointer-events:none}
+.hero>*{position:relative;z-index:1}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:10px}
+.logo{font-weight:800;font-size:20px}.logo b{color:#8b95ff}
+nav .r{display:flex;gap:8px;align-items:center}
+.pill{border:1px solid #ffffff44;background:#ffffff18;color:#fff;border-radius:99px;padding:6px 14px;font:600 13px Cairo,sans-serif;cursor:pointer}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:99px;padding:10px 22px;font:700 15px Cairo,sans-serif;cursor:pointer}
+.hd{text-align:center;padding:36px 0 30px}
+.tag{display:inline-block;background:#ffffff1c;border:1px solid #ffffff33;border-radius:99px;padding:3px 14px;font-size:13px}
+h1{font-size:clamp(32px,6vw,56px);line-height:1.2;margin:16px 0 10px;font-weight:800}
+.hd p{color:#c4c9f0;max-width:520px;margin:0 auto 20px}
+.fl{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:center}
+.g{background:#ffffff1f;border:1px solid #ffffff44;border-radius:22px;padding:18px;backdrop-filter:blur(10px)}
+.g.l{background:#fff;color:#0d1240}
+.big{font-size:34px;font-weight:800;line-height:1.1}
+.sm{font-size:13px;opacity:.75}
+.ring{width:96px;height:96px;border-radius:50%;margin:8px auto;display:grid;place-items:center;background:conic-gradient(var(--ac) calc(var(--p)*1%),#d9dcf4 0)}
+.ring i{font-style:normal;width:74px;height:74px;border-radius:50%;background:#fff;color:#0d1240;display:grid;place-items:center;font-weight:800;font-size:20px}
+.sec{padding:36px 0}
+h2{font-size:clamp(24px,4vw,34px);margin:0 0 6px;text-align:center}
+.sub{color:var(--mu);text-align:center;margin:0 0 22px}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.c{background:var(--card);border:1px solid var(--ln);border-radius:18px;padding:16px}
+.c.a{background:#1a22c8;color:#fff;border-color:#1a22c8}
+.c .n{font-size:28px;font-weight:800}.c small{color:var(--mu)}.c.a small{color:#c9ceff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+input,select,textarea{width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--ln);background:var(--soft);color:var(--tx);font:inherit}
+form .f{grid-column:1/-1}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 12px}
+.tabs button{border:1px solid var(--ln);background:var(--card);color:var(--tx);border-radius:99px;padding:6px 16px;font:600 14px Cairo,sans-serif;cursor:pointer}
+.tabs button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.it{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:12px 14px;margin-bottom:8px}
+.it .ic{font-size:24px}.it .t{flex:1;min-width:0}.it .t b{display:block;overflow-wrap:anywhere}.it .t span{color:var(--mu);font-size:13px}
+.bd{border-radius:99px;padding:3px 12px;font:600 12px Cairo,sans-serif;border:0;cursor:pointer;color:#fff}
+.todo{background:#8a90b8}.doing{background:#f0a020}.done{background:#1fa971}
+.x{background:none;border:0;color:var(--mu);cursor:pointer;font-size:18px}
+.bars{display:flex;gap:8px;align-items:flex-end;height:110px}
+.bars div{flex:1;text-align:center;font-size:11px;color:var(--mu)}
+.bars i{display:block;background:var(--ac);border-radius:6px 6px 0 0;min-height:3px;margin-bottom:4px}
+.tip{background:var(--soft);border-radius:14px;padding:12px 16px;text-align:center;margin-top:14px}
+details summary{cursor:pointer;font-weight:700}
+body.lb .hd,body.lb .fl,body.lb #app{display:none}body.lb .hero{padding-bottom:10px}body:not(.lb) #lib{display:none}table{width:100%;min-width:980px;border-collapse:collapse;background:var(--card);font-size:13px}th,td{padding:8px 10px;border-bottom:1px solid var(--ln);text-align:start;vertical-align:top}th{color:var(--mu);white-space:nowrap}td a{color:var(--ac)}.it{flex-wrap:wrap}.dt{flex-basis:100%;display:grid;gap:8px}.sr{padding:0 1px;font-size:18px}.qu{background:var(--soft);border-radius:10px;padding:6px 10px;font-size:14px}.bg{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.b{border:1px solid var(--ln);background:var(--soft);border-radius:99px;padding:4px 12px;font-size:13px;opacity:.45}.b.on{opacity:1;border-color:var(--ac);font-weight:600}.pb{height:8px;border-radius:9px;background:var(--ln);margin:4px 0 12px;overflow:hidden}.pb i{display:block;height:100%;background:var(--ac)}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:24px 0 40px}
+@media(max-width:760px){.fl,.row,.st{grid-template-columns:1fr 1fr}.fl{grid-template-columns:1fr}.row{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="w">
+<nav><div class="logo">إنجاز<b>.</b> <span style="font-weight:400;font-size:14px">Injaz</span></div>
+<div class="r"><a class="pill" id="nv" href="#library" style="text-decoration:none"></a><button class="pill" id="th">🌓</button><button class="pill" id="lg">English</button></div></nav>
+<div class="hd">
+<span class="tag" data-i="tag"></span>
+<h1 data-i="h1"></h1>
+<p data-i="hp"></p>
+<button class="btn" id="go" data-i="cta"></button>
+</div>
+<div class="fl">
+<div class="g l"><div class="sm" data-i="pts"></div><div class="big" id="hp">0</div><div class="sm"><span data-i="lvl"></span> <b id="hl">1</b></div></div>
+<div class="g l" style="text-align:center"><div class="sm" data-i="todayg"></div><div class="ring" id="hr" style="--p:0"><i id="ht">0/1</i></div><div class="sm" id="hm"></div></div>
+<div class="g"><div class="sm" data-i="streak"></div><div class="big">🔥 <span id="hs">0</span></div><div class="sm" data-i="days"></div></div>
+</div>
+</div>
+</header>
+
+<main class="w" id="app">
+<section class="sec">
+<h2 data-i="h2"></h2><p class="sub" data-i="h2s"></p>
+<div class="st">
+<div class="c a"><small data-i="pts"></small><div class="n" id="s0">0</div></div>
+<div class="c"><small>📰 <span data-i="art"></span></small><div class="n" id="s1">0</div></div>
+<div class="c"><small>📚 <span data-i="bok"></span></small><div class="n" id="s2">0</div></div>
+<div class="c"><small>🎧 <span data-i="pod"></span></small><div class="n" id="s3">0</div></div>
+</div>
+<div class="row">
+<div class="c"><b data-i="add"></b><br><br>
+<form id="fm">
+<select id="ty"><option value="article" data-i="oa"></option><option value="book" data-i="ob"></option><option value="podcast" data-i="op"></option><option value="audiobook" data-i="oab"></option></select>
+<select id="stt"><option value="todo" data-i="todo"></option><option value="doing" data-i="doing"></option><option value="done" data-i="done"></option></select>
+<div class="f" style="display:flex;gap:6px"><input id="ur" data-p="phu" dir="ltr"><button type="button" class="btn" id="ai" data-i="ai" style="white-space:nowrap"></button></div><div class="f sm" id="am"></div><input class="f" id="ti" required data-p="ph1">
+<input class="f" id="by" data-p="ph2"><details class="f" id="mr"><summary data-i="more"></summary><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px"><input id="nr" data-p="phn"><input id="pb" data-p="php"><input id="yr" data-p="phy"><input id="pg" data-p="phg"><input id="du" data-p="phd"><input id="ct" data-p="phc"><input id="lg2" data-p="phl"><textarea id="ds" rows="3" data-p="phs" style="grid-column:1/-1"></textarea></div></details>
+<button class="btn f" data-i="save"></button>
+</form></div>
+<div class="c"><b data-i="week"></b><br><br><div class="bars" id="bars"></div>
+<div class="tip" id="tip"></div></div>
+</div>
+</section>
+
+<section class="sec" style="padding-top:0">
+<div class="c"><b data-i="bdg"></b><div class="bg" id="bgs"></div></div>
+<div class="tabs" id="tabs"></div>
+<div id="list"></div>
+<div class="row">
+<div class="c"><b data-i="msum"></b><div id="sum" style="margin-top:10px"></div></div>
+<div class="c"><b data-i="goal"></b><br><br><input type="number" id="gl" min="1" max="20"><br><br><small data-i="mgl"></small><input type="number" id="mg" min="1"><br><br><small data-i="ygl"></small><input type="number" id="yg" min="1"><br><br>
+<details><summary data-i="data"></summary><br><input type="password" id="ak" placeholder="Groq API key (gsk_...)" dir="ltr" autocomplete="off"><br><br><textarea id="ta" rows="3"></textarea><br><br>
+<button class="pill" style="color:var(--tx);border-color:var(--ln)" id="ex" data-i="exp"></button>
+<button class="pill" style="color:var(--tx);border-color:var(--ln)" id="im" data-i="imp"></button></details></div>
+</div>
+</section>
+</main>
+<main class="w" id="lib"><section class="sec"><h2 data-i="tbl"></h2><p class="sub" data-i="tbs"></p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px"><input id="q" data-p="srch" style="flex:1;min-width:160px"><select id="tf" style="width:auto"></select><button class="pill" style="color:var(--tx);border-color:var(--ln)" id="csv" data-i="csv"></button></div><div style="overflow-x:auto"><table id="tbl"></table></div></section></main>
+<footer data-i="foot"></footer>
+
+<script>
+const T={ar:{tag:"تتبّع قراءتك واستماعك",h1:"حوّل وقتك إلى إنجاز كل يوم",hp:"سجّل مقالاتك وكتبك وبودكاستك، واجمع النقاط، وحافظ على سلسلة أيامك.",cta:"ابدأ الآن",pts:"النقاط",lvl:"المستوى",todayg:"هدف اليوم",streak:"سلسلة الأيام",days:"يوم متتالٍ",h2:"لوحة إنجازاتك",h2s:"كل ما أنجزته في مكان واحد، على الجوال أو الحاسوب.",art:"مقالات",bok:"كتب",pod:"بودكاست",add:"إضافة عنصر جديد",oa:"📰 مقال",ob:"📚 كتاب",op:"🎧 بودكاست",todo:"أريد البدء",doing:"أقرأ/أستمع الآن",done:"أنجزت",ph1:"العنوان",ph2:"الكاتب أو المصدر (اختياري)",save:"حفظ",week:"إنجازات آخر 7 أيام",all:"الكل",foc:"مؤقت التركيز (25 دقيقة)",start:"ابدأ",pause:"إيقاف",goal:"هدف اليوم (عدد العناصر المنجزة)",data:"نسخ احتياطي للبيانات",exp:"تصدير",imp:"استيراد",empty:"لا توجد عناصر بعد. أضف أول إنجاز لك!",foot:"بياناتك محفوظة على جهازك فقط · إنجاز",ok:"أحسنت! حققت هدف اليوم 🎉",left:"متبقٍّ لهدفك: ",tips:["ابدأ بـ10 دقائق فقط، فالبداية أصعب جزء.","اربط القراءة بعادة ثابتة مثل القهوة الصباحية.","لخّص ما قرأته في جملتين لترسّخه.","البودكاست رفيق ممتاز للمشي والطريق."],bdg:"شاراتك",msum:"ملخص هذا الشهر",mgl:"الهدف الشهري (عدد العناصر المنجزة)",ygl:"هدف الكتب السنوي",mo:"هذا الشهر",yo:"كتب هذه السنة",nt:"ملاحظاتك عن هذا العنصر",qt:"أضف اقتباسًا",adq:"إضافة",aub:"كتب صوتية",oab:"🔊 كتاب صوتي",more:"تفاصيل إضافية",phu:"الصق رابط كتاب أو بودكاست أو كتاب صوتي",ai:"✨ تعبئة بالذكاء الاصطناعي",needu:"الصق الرابط أولًا",ai1:"جارٍ التحليل…",ai0:"الذكاء الاصطناعي غير متاح الآن، أكمل البيانات يدويًا",ai2:"تمت التعبئة. راجع البيانات قبل الحفظ (الثقة: ",phn:"الراوي / المقدّم",php:"الناشر / المنصة",phy:"سنة النشر",phg:"عدد الصفحات",phd:"المدة (مثل 8 ساعات)",phc:"التصنيف",phl:"اللغة",phs:"وصف مختصر (يمكنك لصق نص هنا قبل التعبئة)",home:"🏠 الرئيسية",tbl2:"📋 الجدول",tbl:"جدول مكتبتك",tbs:"كل ما أضفته بتفاصيله الكاملة.",srch:"ابحث…",csv:"تصدير CSV",nodl:"التنزيل غير متاح هنا",cols:["النوع","العنوان","المؤلف","الراوي","الناشر","السنة","الصفحات","المدة","التصنيف","اللغة","الحالة","التقييم","تاريخ الإنجاز","الوصف"],nokey:"أدخل مفتاح API في «النسخ الاحتياطي» أسفل الصفحة",bad:"بيانات غير صالحة",ex2:"تم التصدير في المربع"},
+en:{tag:"Track your reading & listening",h1:"Turn your time into achievement, daily",hp:"Log articles, books and podcasts, earn points, and keep your streak alive.",cta:"Get started",pts:"Points",lvl:"Level",todayg:"Today’s goal",streak:"Streak",days:"days in a row",h2:"Your achievements",h2s:"Everything you finished, in one place, on phone or desktop.",art:"Articles",bok:"Books",pod:"Podcasts",add:"Add a new item",oa:"📰 Article",ob:"📚 Book",op:"🎧 Podcast",todo:"Want to start",doing:"In progress",done:"Finished",ph1:"Title",ph2:"Author or source (optional)",save:"Save",week:"Last 7 days",all:"All",foc:"Focus timer (25 min)",start:"Start",pause:"Pause",goal:"Daily goal (items finished)",data:"Data backup",exp:"Export",imp:"Import",empty:"Nothing yet. Add your first achievement!",foot:"Your data stays on your device · Injaz",ok:"Great job! Daily goal reached 🎉",left:"Left for your goal: ",tips:["Start with just 10 minutes; starting is the hardest part.","Pair reading with a fixed habit, like morning coffee.","Sum up what you read in two sentences to remember it.","Podcasts are great for walks and commutes."],bdg:"Your badges",msum:"This month’s summary",mgl:"Monthly goal (items finished)",ygl:"Yearly books goal",mo:"This month",yo:"Books this year",nt:"Your notes on this item",qt:"Add a quote",adq:"Add",aub:"Audiobooks",oab:"🔊 Audiobook",more:"More details",phu:"Paste a book, podcast or audiobook link",ai:"✨ Fill with AI",needu:"Paste the link first",ai1:"Analyzing…",ai0:"AI is unavailable now; fill in the details manually",ai2:"Filled in. Please review before saving (confidence: ",phn:"Narrator / host",php:"Publisher / platform",phy:"Year",phg:"Pages",phd:"Duration (e.g. 8 hours)",phc:"Category",phl:"Language",phs:"Short description (you can paste text here before filling)",home:"🏠 Home",tbl2:"📋 Table",tbl:"Your library table",tbs:"Everything you added, with full details.",srch:"Search…",csv:"Export CSV",nodl:"Download is not available here",cols:["Type","Title","Author","Narrator","Publisher","Year","Pages","Duration","Category","Language","Status","Rating","Finished","Description"],nokey:"Enter your API key under Data backup at the bottom",bad:"Invalid data",ex2:"Exported in the box"}};
+const P={article:10,book:50,audiobook:40,podcast:15},IC={article:"📰",book:"📚",audiobook:"🔊",podcast:"🎧"};
+let S={lang:"ar",items:[],goal:1,mg:10,yg:12},F="all",$=s=>document.querySelector(s);
+try{Object.assign(S,JSON.parse(localStorage.getItem("injaz")||"{}"))}catch(e){}
+const sv=()=>{try{localStorage.setItem("injaz",JSON.stringify(S))}catch(e){}};
+const dk=d=>{d=d||new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let O=null;
+const B=[["book",1,"📗","أول كتاب","First book"],["book",5,"📚","5 كتب","5 books"],["book",10,"🏆","10 كتب","10 books"],["article",10,"📰","10 مقالات","10 articles"],["article",50,"🗞️","50 مقالًا","50 articles"],["podcast",10,"🎧","10 حلقات","10 episodes"],["podcast",25,"🎙️","25 حلقة","25 episodes"],["streak",7,"🔥","أسبوع متواصل","7-day streak"],["streak",30,"⚡","30 يومًا متواصلًا","30-day streak"],["pts",500,"💎","500 نقطة","500 points"]];
+const stars=i=>[1,2,3,4,5].map(n=>`<button class="x sr" data-r="${i.id}:${n}" style="color:${n<=(i.r||0)?"#f0a020":"var(--ln)"}">★</button>`).join("");
+const det=(i,t)=>`<div class="dt"><textarea data-n="${i.id}" rows="3" placeholder="${t.nt}">${esc(i.note||"")}</textarea>`+(i.q||[]).map((q,k)=>`<div class="qu">❝ ${esc(q)} <button class="x" data-qd="${i.id}:${k}">✕</button></div>`).join("")+`<div style="display:flex;gap:6px"><input data-qi="${i.id}" placeholder="${t.qt}"><button class="pill" style="color:var(--tx);border-color:var(--ln)" data-q="${i.id}">${t.adq}</button></div></div>`;
+function R(){R2();nav()}
+function R2(){
+const t=T[S.lang],h=document.documentElement;h.lang=S.lang;h.dir=S.lang=="ar"?"rtl":"ltr";$("#lg").textContent=S.lang=="ar"?"English":"عربي";
+document.querySelectorAll("[data-i]").forEach(e=>e.textContent=t[e.dataset.i]);
+document.querySelectorAll("[data-p]").forEach(e=>e.placeholder=t[e.dataset.p]);
+const dn=S.items.filter(i=>i.status=="done"),pts=dn.reduce((a,i)=>a+P[i.type],0),td=dk();
+const cnt=y=>dn.filter(i=>i.type==y).length,today=dn.filter(i=>i.date==td).length;
+$("#s0").textContent=$("#hp").textContent=pts;$("#hl").textContent=Math.floor(pts/100)+1;
+$("#s1").textContent=cnt("article");$("#s2").textContent=cnt("book");$("#s3").textContent=cnt("podcast");
+const g=S.goal||1;$("#hr").style.setProperty("--p",Math.min(100,today/g*100));$("#ht").textContent=today+"/"+g;
+$("#hm").textContent=today>=g?t.ok:t.left+(g-today);$("#gl").value=g;
+const ds=new Set(dn.map(i=>i.date));let st=0,d=new Date();if(!ds.has(dk(d)))d.setDate(d.getDate()-1);
+while(ds.has(dk(d))){st++;d.setDate(d.getDate()-1)}$("#hs").textContent=st;
+let mx=1,b="";const w=[];for(let k=6;k>=0;k--){const x=new Date();x.setDate(x.getDate()-k);const n=dn.filter(i=>i.date==dk(x)).length;w.push([x.toLocaleDateString(S.lang,{weekday:"short"}),n]);mx=Math.max(mx,n)}
+$("#bars").innerHTML=w.map(a=>`<div><i style="height:${a[1]/mx*80}px"></i>${a[1]}<br>${a[0]}</div>`).join("");
+$("#tip").textContent="💡 "+t.tips[new Date().getDate()%t.tips.length];
+$("#tabs").innerHTML=["all","article","book","audiobook","podcast"].map(k=>`<button class="${F==k?"on":""}" data-f="${k}">${k=="all"?t.all:IC[k]+" "+t[{article:"art",book:"bok",audiobook:"aub",podcast:"pod"}[k]]}</button>`).join("");
+const L=S.items.filter(i=>F=="all"||i.type==F).slice().reverse();
+$("#list").innerHTML=L.length?L.map(i=>`<div class="it"><span class="ic">${IC[i.type]}</span><div class="t"><b>${esc(i.title)}</b><span>${esc(i.by||"")} ${i.date?"· "+i.date:""} · +${P[i.type]}</span><div>${stars(i)}</div></div><button class="bd ${i.status}" data-s="${i.id}">${t[i.status]}</button><button class="x" data-o="${i.id}">📝</button><button class="x" data-d="${i.id}">✕</button>${O==i.id?det(i,t):""}</div>`).join(""):`<p class="sub">${t.empty}</p>`;
+const mk=td.slice(0,7),yk=td.slice(0,4),mo=dn.filter(i=>i.date.startsWith(mk)),yb=dn.filter(i=>i.type=="book"&&i.date.startsWith(yk)).length,mg=S.mg||10,yg=S.yg||12,bar=(a,c)=>`<div class="pb"><i style="width:${Math.min(100,a/c*100)}%"></i></div>`,mc=y=>mo.filter(i=>i.type==y).length;
+$("#sum").innerHTML=`<div>📰 ${mc("article")} · 📚 ${mc("book")} · 🎧 ${mc("podcast")} · ⭐ ${mo.reduce((a,i)=>a+P[i.type],0)}</div><br><small>${t.mo}: ${mo.length}/${mg}</small>${bar(mo.length,mg)}<small>${t.yo}: ${yb}/${yg}</small>${bar(yb,yg)}`;
+$("#mg").value=mg;$("#yg").value=yg;
+const V={book:cnt("book"),article:cnt("article"),podcast:cnt("podcast"),streak:st,pts};
+$("#bgs").innerHTML=B.map(k=>`<span class="b ${V[k[0]]>=k[1]?"on":""}">${k[2]} ${k[S.lang=="ar"?3:4]}</span>`).join("");
+}
+document.addEventListener("click",e=>{const a=e.target;
+if(a.dataset.f){F=a.dataset.f;R()}
+if(a.dataset.s){const i=S.items.find(x=>x.id==a.dataset.s),o=["todo","doing","done"];i.status=o[(o.indexOf(i.status)+1)%3];i.date=i.status=="done"?dk():"";sv();R()}
+if(a.dataset.d){S.items=S.items.filter(x=>x.id!=a.dataset.d);sv();R()}
+if(a.dataset.o){O=O==a.dataset.o?null:a.dataset.o;R()}
+if(a.dataset.r){const[id,n]=a.dataset.r.split(":"),i=S.items.find(x=>x.id==id);i.r=i.r==+n?0:+n;sv();R()}
+if(a.dataset.q){const v=document.querySelector(`[data-qi="${a.dataset.q}"]`).value.trim(),i=S.items.find(x=>x.id==a.dataset.q);if(v){(i.q=i.q||[]).push(v);sv();R()}}
+if(a.dataset.qd){const[id,k]=a.dataset.qd.split(":"),i=S.items.find(x=>x.id==id);i.q.splice(+k,1);sv();R()}});
+document.addEventListener("change",e=>{if(e.target.dataset.n){S.items.find(x=>x.id==e.target.dataset.n).note=e.target.value;sv()}});
+$("#fm").onsubmit=e=>{e.preventDefault();const s=$("#stt").value;const g=k=>$("#"+k).value.trim(),ks=["ti","by","ur","nr","pb","yr","pg","du","ct","lg2","ds"];S.items.push({id:Date.now(),type:$("#ty").value,title:g("ti"),by:g("by"),status:s,date:s=="done"?dk():"",url:g("ur"),nr:g("nr"),pb:g("pb"),yr:g("yr"),pg:g("pg"),du:g("du"),ct:g("ct"),lg:g("lg2"),ds:g("ds")});ks.forEach(k=>$("#"+k).value="");$("#am").textContent="";sv();R()};
+$("#lg").onclick=()=>{S.lang=S.lang=="ar"?"en":"ar";sv();R()};
+$("#th").onclick=()=>{const r=document.documentElement,d=r.dataset.theme=="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark"};
+$("#go").onclick=()=>$("#app").scrollIntoView();
+function nav(){const lb=document.body.classList.contains("lb"),t=T[S.lang],a=$("#nv");a.textContent=lb?t.home:t.tbl2;a.href=lb?"#home":"#library";if(lb)tbl()}
+function route(){document.body.classList.toggle("lb",location.hash=="#library");scrollTo(0,0);nav()}
+function tbl(){const t=T[S.lang],q=$("#q").value.toLowerCase(),tf=$("#tf"),f=tf.value||"all",nm={article:"art",book:"bok",audiobook:"aub",podcast:"pod"};
+if(!tf.options.length)tf.innerHTML=["all","article","book","audiobook","podcast"].map(k=>`<option value="${k}"></option>`).join("");
+[...tf.options].forEach(o=>o.textContent=o.value=="all"?t.all:IC[o.value]+" "+t[nm[o.value]]);
+const L=S.items.filter(i=>(f=="all"||i.type==f)&&JSON.stringify(i).toLowerCase().includes(q)),
+c=i=>[IC[i.type],/^https?:/.test(i.url||"")?`<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>`:esc(i.title),esc(i.by||""),esc(i.nr||""),esc(i.pb||""),esc(i.yr||""),esc(i.pg||""),esc(i.du||""),esc(i.ct||""),esc(i.lg||""),t[i.status],"★".repeat(i.r||0),i.date||"",esc((i.ds||"").slice(0,140))];
+$("#tbl").innerHTML=`<tr>${t.cols.map(h=>`<th>${h}</th>`).join("")}</tr>`+L.map(i=>`<tr>${c(i).map(x=>`<td>${x}</td>`).join("")}</tr>`).join("")}
+$("#q").oninput=tbl;$("#tf").onchange=tbl;
+$("#csv").onclick=async()=>{const t=T[S.lang];try{const d={save:async o=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([o.data],{type:"text/csv"}));a.download=o.filename;a.click()}};const rows=[t.cols.concat("URL")].concat(S.items.map(i=>[i.type,i.title,i.by,i.nr,i.pb,i.yr,i.pg,i.du,i.ct,i.lg,i.status,i.r,i.date,i.ds,i.url].map(x=>x||"")));await d.save({filename:"injaz-library.csv",data:"\ufeff"+rows.map(r=>r.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(",")).join("\n")})}catch(e){}};
+$("#ai").onclick=async()=>{const u=$("#ur").value.trim(),t=T[S.lang],m=$("#am"),x=$("#ds").value.trim();if(!u){m.textContent=t.needu;return}m.textContent=t.ai1;
+try{const k=localStorage.getItem("injaz_key");if(!k){m.textContent=t.nokey;return}const sm={json:async p=>{const rs=await fetch("https://api.groq.com/openai/v1/chat/completions",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+k},body:JSON.stringify({model:"llama-3.3-70b-versatile",response_format:{type:"json_object"},messages:[{role:"user",content:p}]})});if(!rs.ok)throw 0;return JSON.parse((await rs.json()).choices[0].message.content)}};
+const r=await sm.json(`Fill in a library record from this link: ${u}${x?"\nText provided by the user about it: "+x:""}\nYou cannot open the link. Use only the link text, the user text, and what you genuinely know about this exact work. Never invent: use an empty string for anything unknown. Reply with JSON only: {"type":"article|book|audiobook|podcast","title":"","author":"","narrator":"","publisher":"","year":"","pages":"","duration":"","category":"","language":"","description":"2-3 sentences in ${S.lang=="ar"?"Arabic":"English"}","confidence":"high|medium|low"}`);
+const f={ty:r.type,ti:r.title,by:r.author,nr:r.narrator,pb:r.publisher,yr:r.year,pg:r.pages,du:r.duration,ct:r.category,lg2:r.language,ds:r.description};
+for(const k in f)if(f[k]&&(k!="ty"||P[f[k]]))$("#"+k).value=f[k];
+$("#mr").open=true;m.textContent=t.ai2+(r.confidence||"-")+")"}catch(e){m.textContent=t.ai0}};
+try{$("#ak").value=localStorage.getItem("injaz_key")||""}catch(x){}$("#ak").onchange=e=>{try{localStorage.setItem("injaz_key",e.target.value.trim())}catch(x){}};
+addEventListener("hashchange",route);route();
+$("#gl").onchange=e=>{S.goal=Math.max(1,+e.target.value||1);sv();R()};
+$("#mg").onchange=e=>{S.mg=Math.max(1,+e.target.value||1);sv();R()};
+$("#yg").onchange=e=>{S.yg=Math.max(1,+e.target.value||1);sv();R()};
+$("#ex").onclick=()=>{$("#ta").value=JSON.stringify(S.items);try{$("#ta").select()}catch(e){}};
+$("#im").onclick=()=>{try{const v=JSON.parse($("#ta").value);if(!Array.isArray(v))throw 0;S.items=v;sv();R()}catch(e){alert(T[S.lang].bad)}};
+
+
+
+R();
+</script>
+</body>
+</html>
